@@ -1,8 +1,19 @@
+/* Responsive Images */
+
+img{
+max-width:100%;
+height:auto;
+}
+
+/* Body */
+
 body{
 font-family: Arial;
 margin:0;
 background:#f4f4f4;
 }
+
+/* Header */
 
 header{
 background:#111;
@@ -11,12 +22,16 @@ padding:20px;
 text-align:center;
 }
 
+/* Navbar */
+
 nav a{
 color:white;
 margin:10px;
 text-decoration:none;
 font-weight:bold;
 }
+
+/* Hero */
 
 .hero img{
 width:100%;
@@ -32,8 +47,11 @@ color:white;
 font-size:30px;
 }
 
+/* Cards Section */
+
 .cards{
 display:flex;
+flex-wrap:wrap;
 gap:20px;
 justify-content:center;
 padding:40px;
@@ -53,8 +71,11 @@ height:180px;
 object-fit:cover;
 }
 
+/* Menu Section */
+
 .menu{
 display:flex;
+flex-wrap:wrap;
 gap:20px;
 justify-content:center;
 padding:40px;
@@ -72,6 +93,8 @@ height:150px;
 object-fit:cover;
 }
 
+/* About */
+
 .about{
 padding:40px;
 text-align:center;
@@ -81,54 +104,13 @@ text-align:center;
 width:400px;
 }
 
-.shop{
-display:flex;
-gap:30px;
-justify-content:center;
-padding:40px;
-}
-
-.product{
-background:white;
-padding:20px;
-text-align:center;
-}
-
-.blog{
-padding:40px;
-}
-
-.blog-post{
-background:white;
-padding:20px;
-margin-bottom:20px;
-}
-
-.contact{
-padding:40px;
-text-align:center;
-}
-
-.back-img{
-width:40px;
-margin:20px;
-cursor:pointer;
-}
-
-form input,textarea{
-display:block;
-width:300px;
-margin:10px auto;
-padding:10px;
-}
-
 /* Shop Section */
 
 .shop{
 display:flex;
-justify-content:center;
-gap:30px;
 flex-wrap:wrap;
+gap:30px;
+justify-content:center;
 padding:40px;
 }
 
@@ -143,7 +125,7 @@ border-radius:10px;
 box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Shop Image Size Fix */
+/* Shop Image Fix */
 
 .product img{
 width:100%;
@@ -152,21 +134,7 @@ object-fit:cover;
 border-radius:8px;
 }
 
-/* Button */
-
-.product button{
-margin-top:10px;
-padding:8px 15px;
-background:#e63946;
-color:white;
-border:none;
-border-radius:6px;
-cursor:pointer;
-}
-
-.product button:hover{
-background:#c1121f;
-}
+/* Buttons */
 
 button{
 padding:10px 20px;
@@ -174,7 +142,42 @@ background:#e63946;
 color:white;
 border:none;
 cursor:pointer;
+border-radius:6px;
 }
+
+.product button{
+margin-top:10px;
+padding:8px 15px;
+}
+
+button:hover{
+background:#c1121f;
+}
+
+/* Contact */
+
+.contact{
+padding:40px;
+text-align:center;
+}
+
+form input,
+textarea{
+display:block;
+width:300px;
+margin:10px auto;
+padding:10px;
+}
+
+/* Back Button */
+
+.back-img{
+width:40px;
+margin:20px;
+cursor:pointer;
+}
+
+/* Footer */
 
 footer{
 background:#111;
